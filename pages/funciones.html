@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -9,9 +10,10 @@
     <link rel="stylesheet" href="../assets/css/stylesNaranjo.css">
     <script src="../assets/js/main.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
-    <title>Inicio Proyecto</title>
-  </head>
-  <body>
+    <title>Funciones</title>
+</head>
+
+<body>
     <div id="nav"></div>
 
     <main>
@@ -46,17 +48,138 @@
         </section>
 
         <!-- seccion para contenido  -->
-         <section></section>
+        <section class="section-funciones">
+            <div>
+                <section>
+                    <h1>Funciones en JavaScript</h1>
+                    <h2>Introducción</h2>
+                    <p>En JavaScript, las funciones son bloques de código diseñados para realizar una tarea específica.
+                        Permiten
+                        organizar y reutilizar el código, haciendo que el desarrollo sea más eficiente y claro. Las
+                        funciones
+                        pueden aceptar parámetros y devolver valores, y son uno de los conceptos fundamentales en
+                        JavaScript y
+                        en la programación en general.</p>
+
+                    <h3>¿Qué es una función?</h3>
+                    <p>Una función en JavaScript es un conjunto de instrucciones agrupadas bajo un nombre, que se
+                        ejecutan
+                        cuando se llama a esa función. Las funciones ayudan a evitar la repetición de código y facilitan
+                        el
+                        mantenimiento.</p>
+
+                    <h3>Sintaxis Básica</h3>
+                    <p>La sintaxis básica de una función en JavaScript incluye la palabra clave function, un nombre para
+                        la
+                        función, paréntesis () y un bloque de código entre llaves {}. Así: <br>
+                        function nombreFuncion() { <br>
+                        // código a ejecutar <br>
+                        }</p>
+                    <h2>Tipos de Funciones en JavaScript</h2>
+                    <ul>
+                        <li><a href="#declarativas">Funciones Declarativas</a></li>
+                        <li><a href="#expresadas">Funciones Expresadas (Funciones Anónimas)</a></li>
+                        <li><a href="#flecha">Funciones Flecha (Arrow Functions)</a></li>
+                        <li><a href="#param&argu">Parámetros y Argumentos</a></li>
+                        <li><a href="#retorno">Valor de Retorno</a></li>
+                        <li><a href="#ordensuperior">Funciones de Orden Superior</a></li>
+                        <li><a href="#asincronas">Funciones Asíncronas</a></li>
+                    </ul>
+                </section>
+
+
+                <!-- seccion para funcoines declarativas  -->
+                <section id="declarativas">
+                    <h3>Funciones Declarativas</h3>
+                    <p>Son funciones definidas con la palabra clave function, seguida del nombre de la función y el
+                        bloque de
+                        instrucciones. Estas funciones pueden ser llamadas antes de su declaración en el código. <br>
+                        function saludar() { <br>
+                        console.log("¡Hola!"); <br>
+                        }</p>
+                </section>
+
+                <!-- seccion para funciones expresadas  -->
+                <section id="expresadas">
+                    <h3>Funciones Expresadas (Funciones Anónimas)</h3>
+                    <p>Las funciones expresadas se asignan a una variable y pueden o no tener un nombre. Solo se pueden
+                        llamar
+                        después de su definición, ya que no son elevadas (hoisted) como las funciones declarativas. <br>
+                        const saludar = function() { <br>
+                        console.log("¡Hola!"); <br>
+                        };</p>
+                </section>
+
+                <!-- seccion para funciones flecha -->
+                <section id="flecha">
+                    <h3>Funciones Flecha (Arrow Functions)</h3>
+                    <p>Introducidas en ES6, las funciones flecha tienen una sintaxis más corta y no crean su propio
+                        contexto
+                        this. Son ideales para funciones de una sola línea o de callback. <br>
+                        const saludar = () => console.log("¡Hola!");</p>
+                </section>
+
+                <!-- seccion para parametros y argumentos  -->
+                <section id="param&argu">
+                    <h3>Parámetros y Argumentos</h3>
+                    <p>Las funciones pueden recibir valores como entrada, llamados "parámetros", que son utilizados
+                        dentro de la
+                        función. Los valores que se pasan cuando se llama a la función se denominan "argumentos". <br>
+                        function sumar(a, b) { <br>
+                        return a + b; <br>
+                        }</p>
+                </section>
+
+                <!-- seccion para valor retorno  -->
+                <section id="retorno">
+                    <h3>Valor de Retorno</h3>
+                    <p>Una función puede devolver un valor utilizando la palabra clave return. Esto permite que otras
+                        partes del
+                        código utilicen el valor generado por la función. <br>
+                        function multiplicar(a, b) { <br>
+                        return a * b; <br>
+                        }</p>
+                </section>
+
+                <!-- seccion para funciones de orden superior  -->
+                <section id="ordensuperior">
+                    <h3>Funciones de Orden Superior</h3>
+                    <p>Las funciones de orden superior son aquellas que pueden aceptar otras funciones como argumentos o
+                        devolver una función como resultado. Son comunes en operaciones de arreglos, como map, filter y
+                        reduce.
+                        <br>
+                        const duplicar = (n) => n * 2; <br>
+                        const numeros = [1, 2, 3]; <br>
+                        const resultado = numeros.map(duplicar); // [2, 4, 6]
+                    </p>
+                </section>
+
+                <!-- seccion para funciones asincronas  -->
+                <section id="asincronas">
+                    <h3>Funciones Asíncronas</h3>
+                    <p>Las funciones asíncronas permiten manejar operaciones que toman tiempo, como solicitudes a
+                        servidores.
+                        JavaScript utiliza async y await para escribir código asíncrono de manera más sencilla y
+                        legible. <br>
+                        async function obtenerDatos() { <br>
+                        const respuesta = await fetch("https://api.example.com/data"); <br>
+                        const datos = await respuesta.json(); <br>
+                        return datos; <br>
+                        }</p>
+                </section>
+            </div>
+        </section>
     </main>
 
 
     <div id="footer" class="fondo-azul"></div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        loadComponent("nav", "navbar.html");
-        loadComponent("footer", "footer.html");
-      });
+        document.addEventListener('DOMContentLoaded', function () {
+            loadComponent("nav", "navbar.html");
+            loadComponent("footer", "footer.html");
+        });
     </script>
-  </body>
+</body>
+
 </html>

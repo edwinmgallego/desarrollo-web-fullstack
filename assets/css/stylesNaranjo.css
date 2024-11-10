@@ -4,6 +4,7 @@
 
 h1{
     color:  black;
+    justify-content: center;
 }
 
 
@@ -20,9 +21,7 @@ h1{
     width: 60px;
     object-fit: cover;
 }
-h2{
-    font-size: 30px;
-}
+
 
 /* Perfil */
 
@@ -42,4 +41,15 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section-ciclos{
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.section-funciones{
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -9,9 +10,10 @@
     <link rel="stylesheet" href="../assets/css/stylesNaranjo.css">
     <script src="../assets/js/main.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
-    <title>Inicio Proyecto</title>
-  </head>
-  <body>
+    <title>Ciclos</title>
+</head>
+
+<body>
     <div id="nav"></div>
 
     <main>
@@ -48,9 +50,111 @@
         <!-- seccion para contenido  -->
         <section class="section-ciclos">
             <div>
-                <section>
-                    <h1>Ciclos</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, minus?</p>
+
+                <!-- seccion para la introduccion  -->
+                <section name="introduccion">
+                    <h1>Bucles e iteración</h1>
+                    <p>En programación, los ciclos (o bucles) son estructuras de control que permiten ejecutar
+                        repetidamente un bloque de código hasta que se cumpla una condición específica. Son
+                        fundamentales
+                        para automatizar tareas, ya que ahorran tiempo y reducen errores al eliminar la necesidad de
+                        escribir
+                        manualmente instrucciones repetitivas.</p>
+                </section>
+
+                <!-- seccion para el contenido  -->
+                <section name="contendio">
+                    <h2>Diferentes ciclos</h2>
+                    <p>Existen varios tipos de ciclos, como for, while y do-while, cada uno con características
+                        específicas según
+                        el caso de uso. Los ciclos son esenciales en tareas como el procesamiento de listas, la
+                        ejecución de algoritmos
+                        y la iteración sobre grandes conjuntos de datos, optimizando el flujo de trabajo en cualquier
+                        programa.</p>
+                    <ul>
+                        <li><a href="#for">For</a></li>
+                        <li><a href="#doWhile">Do while</a></li>
+                        <li><a href="#while">While</a></li>
+                    </ul>
+                </section>
+
+                <!-- seccion para el for  -->
+                <section id="for">
+                    <h3>Ciclo For</h3>
+                    Un ciclo for se repite hasta que una condición especificada se evalúe como false.
+                    El bucle for de JavaScript es similar al bucle for de Java y C.
+                    <br>Una declaración for tiene el siguiente aspecto:
+
+                    <br>
+                    <card>for ([expresiónInicial]; [expresiónCondicional]; [expresiónDeActualización]){
+                        instrucción}</card> <br>
+
+                    <p>Cuando se ejecuta un bucle for, ocurre lo siguiente:</p>
+
+                    <ol>
+                        <li>Se ejecuta la expresión de iniciación <strong><i>expresiónInicial</i></strong>, si existe.
+                            Esta expresión normalmente inicia uno o más contadores de bucle, pero la sintaxis permite
+                            una
+                            expresión de cualquier grado de complejidad. Esta expresión también puede declarar
+                            variables.</li>
+                        <li>Se evalúa la expresión <strong><i>expresiónCondicional</i></strong>. Si el valor de
+                            <strong><i>expresiónCondicional</i></strong>
+                            es verdadero, se ejecutan las instrucciones del bucle. Si el valor de
+                            <strong><i>condición</i></strong> es falso,
+                            el bucle <strong><i>for</i></strong> termina.
+                            (Si la expresión <strong><i>condición</i></strong> se omite por completo, se supone
+                            que la condición es verdadera).
+                        </li>
+                        <li>Se ejecuta la <strong><i>instrucción</i></strong>. Para ejecutar varias instrucciones, usa
+                            una declaración de bloque
+                            (<strong><i>{ ... }</i></strong>) para agrupar esas declaraciones.</li>
+                        <li>Si está presente, se ejecuta la expresión de actualización
+                            <strong><i>expresiónDeActualización</i></strong>.
+                        </li>
+                        <li>El control regresa al paso 2.</li>
+                    </ol>
+                </section>
+
+                <!-- seccion para el Do while  -->
+                <section id="doWhile">
+                    <h3>Declaración do...while</h3>
+                    <p>La instrucción do...while se repite hasta que una condición especificada se evalúe como falsa.
+                        Una declaración do...while tiene el siguiente aspecto:</p>
+                    <br>
+                    <card>do { <br>
+                        expresión }<br>
+                        while (condición);</card> <br>
+                    <p>
+                        exposición siempre se ejecuta una vez antes de que se verifique la condición. (Para ejecutar
+                        varias instrucciones, usa una declaración de bloque ({ ... }) para agrupar esas declaraciones).
+                        <br>
+
+                        Si condición es true, la declaración se ejecuta de nuevo. Al final de cada ejecución, se
+                        comprueba la condición. Cuando la condición es false, la ejecución se detiene y el control pasa
+                        a la declaración que sigue a do...while.
+                    </p>
+                </section>
+
+                <!-- seccion para el While  -->
+                <section id="while">
+                    <h3>Declaración while</h3>
+                    <p>Una declaración while ejecuta sus instrucciones siempre que una condición especificada se evalúe
+                        como true. Una instrucción while tiene el siguiente aspecto:</p>
+                    <br>
+                    <card>while (condición) <br>
+                        { expresión }</card> <br>
+                    <p>
+                        Si la condición se vuelve false, la instrucción dentro del bucle se deja de ejecutar y el
+                        control pasa a la instrucción que sigue al bucle. <br>
+
+                        La prueba de condición ocurre antes de que se ejecute la expresión en el bucle. Si la condición
+                        devuelve true, se ejecuta la expresión y la condición se prueba de nuevo. Si la condición
+                        devuelve false, la ejecución se detiene y el control se pasa a la instrucción que sigue a while.
+                        <br>
+
+                        Para ejecutar varias instrucciones, usa una declaración de bloque ({ ... }) para agrupar esas
+                        declaraciones.
+                    </p>
                 </section>
             </div>
         </section>
@@ -60,10 +164,11 @@
     <div id="footer" class="fondo-azul"></div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        loadComponent("nav", "navbar.html");
-        loadComponent("footer", "footer.html");
-      });
+        document.addEventListener('DOMContentLoaded', function () {
+            loadComponent("nav", "navbar.html");
+            loadComponent("footer", "footer.html");
+        });
     </script>
-  </body>
+</body>
+
 </html>
