@@ -1,0 +1,25 @@
+:root{
+/*Colores */
+    --blue-talento-tech:#002552;
+    --blanco-talento-tech:azure;
+    --negro-talento-tech:black;
+/* Fuentes */
+    --ms:0.5rem;    /*tamaño pequeño*/
+    --md:1rem;      /*tamaño mediano*/
+    --lg:2rem;      /*tamaño grande*/
+}
+
+.fondo-azul{
+    background: var(--blue-talento-tech); /*fondo del navegador*/
+}
+
+.fondo-black{
+    background: var(--negro-talento-tech);
+}
+
+.logo{
+    /*Tmaño del logo que esta en el navegador*/
+    width: 150px;
+    height: auto;
+    padding: 15px 0px 0px 20px;
+}
