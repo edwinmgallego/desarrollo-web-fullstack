@@ -1,0 +1,12 @@
+:root{
+    /*Colores */
+        --blue-talento-tech:#002552;
+        --blanco-talento-tech:azure;
+        --negro-talento-tech:black;
+    /* Fuentes */
+        --ms:0.5rem;    /* tamaño pequeño */
+        --md:1rem;      /* tamaño mediano */
+        --lg:2rem;      /* tamaño grande */
+    }
+
+    
