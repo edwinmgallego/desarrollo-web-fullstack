@@ -1,0 +1,29 @@
+:root{
+    /* colores */
+    --blue-talento-tech:#002552;
+    --blanco-talento-tech:azure;
+    --negro-talento-tech:black;
+    /*fuentes*/
+    --ms:0.5rem; /*tamaño pequeño */
+    --md:1rem;       /*tamaño mediano */
+    --lg:2rem;       /*tamaño grande*/
+}
+fondo-azul{
+    bacground var{-blue-talento-tech
+    ondo del navegador/
+[
+    logo{
+        Tamaño del logo ue esta en el navegador 
+        width: 0.15px;
+        height auto;
+        padding: 15px OpxOpx20px;
+    }
+]}
+}
+.dannafotocss{
+    width: 50x;
+    font-size:15 px ;
+}
+.dannaparrafo{
+    margin: 50px;
+}
