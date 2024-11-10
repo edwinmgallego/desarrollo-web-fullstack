@@ -1,0 +1,141 @@
+:root{
+    /*Colores */
+        --blue-talento-tech:#002552;
+        --blanco-talento-tech:azure;
+        --negro-talento-tech:black;
+    /* Fuentes */
+        --ms:0.5rem;    /*tamaño pequeño*/
+        --md:1rem;      /*tamaño mediano*/
+        --lg:2rem;      /*tamaño grande*/
+    }
+    
+    .fondo-azul{
+        background: var(--blue-talento-tech); /*fondo del navegador*/
+    }
+    
+    .fondo-black{
+        background: var(--negro-talento-tech);
+    }
+    
+    .logo{
+        /*Tmaño del logo que esta en el navegador*/
+        width: 150px;
+        height: auto;
+        padding: 15px 0px 0px 20px;
+    }
+/*estilos de mi Commit*/
+
+.contenedor_kota {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 10px;
+}
+
+/* Ajuste de las imágenes */
+.image_kota {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 20px; 
+}
+
+/* Encabezado */
+.head_kota {
+    text-align: center;
+    padding: 10px;
+}
+
+.marquee_kota {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+
+
+.head_kota {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #222;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.marquee_kota{
+    display: inline-block;
+    white-space: nowrap;
+    transform: translateX(10);
+    transition: transform 0s; /* Sin movimiento inicial */
+    font-size: 40px;
+    animation: scroll-text 10s linear infinite;
+}
+
+.head_kota:hover .marquee_kota {
+    animation-play-state:paused ;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color:rgb(255, 247, 0);
+  }
+  @keyframes scroll-text {
+      0% {
+          transform: translateX(200%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+  .contenedor_kota{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 5rem;
+    padding: 1rem;
+    align-items: baseline;
+    align-items: center;
+    background-color: var(--blue-talento-tech);
+    border-radius: 2rem;
+  }
+  
+  .h3_kota:hover{
+    transform: scale(1.05);
+    color: aliceblue;
+    box-shadow: 0 8px 16px rgb(249, 247, 247); /* Intensifica la sombra en hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+    cursor: pointer;
+    border-radius: 3rem;
+    
+  }
+  .span_kota{
+    font-size: small;
+    color: aliceblue;
+  }
+
+  
+  .sect_1,
+  .sect_2,
+  .sect_3 {
+    padding: 10px; /* Añade espacio interno para separación */
+    max-width: 100%; /* Ajusta para que ambos se alineen simétricamente */
+    text-align: center; /* Centra el texto y las imágenes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .sect_3:hover{
+    color: white;
+    cursor: context-menu 'hola';
+  }
+  
+  .sect_1:hover,
+  .sect_2:hover,
+  .sect_3:hover  {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño en hover */
+    box-shadow: 0 8px 19px rgb(251, 255, 2); /* Intensifica la sombra en hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 2rem;
+  }
