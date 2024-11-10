@@ -7,6 +7,9 @@
     --ms:0.5rem;    /*tamaño pequeño*/
     --md:1rem;      /*tamaño mediano*/
     --lg:2rem;      /*tamaño grande*/
+
+    font-family: "Poppins", sans-serif;
+
 }
 
 .fondo-azul{
@@ -23,3 +26,62 @@
     height: auto;
     padding: 15px 0px 0px 20px;
 }
+
+.Titulos1{
+    font-size: var(--lg);
+    font-weight:900;
+}
+
+.Titulos2{
+    font-size: var(--lg);
+    font-style: italic;
+
+}
+
+.Titulos3{
+    font-size: var(--md);
+    font-weight: bolder ;
+}
+
+#TituloSpecial{
+    color: var(--blue-talento-tech);
+    font-style: italic;
+}
+
+#titleImage{
+    height: 2.5rem;
+}
+
+.codebox {
+    color: var(--negro-talento-tech);
+    background-color: white;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 1.3;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-width: thin;
+    border-style: solid;
+    box-shadow: 16px 16px grey;
+  }
+  
+  .codeheader {
+    color: white;
+    background-color: var(--blue-talento-tech);
+    border-color: var(--blue-talento-tech);
+    padding: 10px;
+    font-size: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-width: thin;
+    border-style: solid;
+    text-align: left;
+    box-shadow: 16px 16px grey;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+  }
