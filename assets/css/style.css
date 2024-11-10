@@ -1,0 +1,46 @@
+/* Fuentes globales */
+body{
+    background-color: #002552;
+}
+
+h1{
+    color:  azure;
+}
+
+
+/* Redes sociales */
+
+
+.social {
+    gap: 20;
+}
+
+.socialimg {
+    padding: 0px;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+h2{
+    font-size: 30px;
+}
+
+/* Perfil */
+
+.perfil {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Imagen de perfil */
+.profileimg {
+    width: 200px;
+    border: 2px solid azure;
+    border-radius: 20%;
+    margin: 25px;
+}
+.pr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
