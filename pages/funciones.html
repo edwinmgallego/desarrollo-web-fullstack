@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/stylesNaranjo.css">
+    <script src="../assets/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <title>Inicio Proyecto</title>
+  </head>
+  <body>
+    <div id="nav"></div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/desarrollo-web-fullstack/assets/css/style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <!-- seccion desdicada al perfil -->
-    <section class="perfil">
-        <div class="row">
-            <div class="col s6">
-                <div class="pr">
+    <main>
+        <!-- seccion para el perfil  -->
+        <section class="perfil">
+            <div class="row">
+                <div class="col s6">
+                    <div class="pr">
+                        <a href="https://davidnaranjog.github.io/portafolio/" target="_black">
+                            <img src="https://avatars.githubusercontent.com/u/141893377?v=4" alt="profileimage"
+                                class="profileimg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col s6">
                     <a href="https://davidnaranjog.github.io/portafolio/" target="_black">
-                        <img src="https://avatars.githubusercontent.com/u/141893377?v=4" alt="profileimage"
-                            class="profileimg">
+                        <h1>David A. Naranjo G.</h1>
                     </a>
+                    <card class="social">
+                        <a href="https://www.linkedin.com/in/david-alexander-naranjo-gongora-066646246" target="_black">
+                            <img class="socialimg"
+                                src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="linkedin">
+                        </a>
+                        <a href="https://github.com/DavidNaranjoG" target="_black">
+                            <img class="socialimg"
+                                src="https://cdn.iconscout.com/icon/free/png-256/free-github-10516009-8630395.png?f=webp"
+                                alt="github">
+                        </a>
+                    </card>
                 </div>
             </div>
-            <div class="col s6">
-                <a href="https://davidnaranjog.github.io/portafolio/" target="_black">
-                    <h1>David A. Naranjo G.</h1>
-                </a>
-                <card class="social">
-                    <a href="https://www.linkedin.com/in/david-alexander-naranjo-gongora-066646246" target="_black">
-                        <img class="socialimg" src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000"
-                            alt="linkedin">
-                    </a>
-                    <a href="https://github.com/DavidNaranjoG" target="_black">
-                        <img class="socialimg"
-                            src="https://cdn.iconscout.com/icon/free/png-256/free-github-10516009-8630395.png?f=webp"
-                            alt="github">
-                    </a>
-                </card>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- seccion para contenido  -->
+         <section></section>
+    </main>
 
-</body>
 
+    <div id="footer" class="fondo-azul"></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        loadComponent("nav", "navbar.html");
+        loadComponent("footer", "footer.html");
+      });
+    </script>
+  </body>
 </html>

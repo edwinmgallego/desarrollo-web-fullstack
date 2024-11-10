@@ -3,8 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stylesNaranjo.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <title>Inicio Proyecto</title>
   </head>
-  <h1>dev</h1>
-  <body></body>
+  <body>
+    <div id="nav"><!--sección del navegador--></div>
+
+    <!-- INFORMACIÓN QUE IRIAN EN EL MEDIO DEL NAVEGADOR Y EL FOOTER -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <p>informacion</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer" class="fondo-azul"></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        loadComponent("nav", "pages/navbar.html");
+        loadComponent("footer", "pages/footer.html");
+      });
+    </script>
+  </body>
 </html>

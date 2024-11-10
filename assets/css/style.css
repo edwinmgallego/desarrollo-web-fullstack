@@ -1,46 +1,28 @@
-/* Fuentes globales */
-body{
-    background-color: #002552;
+
+/* ======= */
+:root{
+/*Colores */
+    --blue-talento-tech:#002552;
+    --blanco-talento-tech:azure;
+    --negro-talento-tech:black;
+/* Fuentes */
+    --ms:0.5rem;    /*tamaño pequeño*/
+    --md:1rem;      /*tamaño mediano*/
+    --lg:2rem;      /*tamaño grande*/
 }
 
-h1{
-    color:  azure;
+.fondo-azul{
+    background: var(--blue-talento-tech); /*fondo del navegador*/
 }
 
-
-/* Redes sociales */
-
-
-.social {
-    gap: 20;
+.fondo-black{
+    background: var(--negro-talento-tech);
 }
 
-.socialimg {
-    padding: 0px;
-    height: 60px;
-    width: 60px;
-    object-fit: cover;
-}
-h2{
-    font-size: 30px;
-}
-
-/* Perfil */
-
-.perfil {
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Imagen de perfil */
-.profileimg {
-    width: 200px;
-    border: 2px solid azure;
-    border-radius: 20%;
-    margin: 25px;
-}
-.pr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo{
+    /*Tmaño del logo que esta en el navegador*/
+    width: 150px;
+    height: auto;
+    padding: 15px 0px 0px 20px;
+/* >>>>>>> cbee7012fd9880d5a855d7a7cca5678678e721b4 */
 }
