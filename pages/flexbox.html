@@ -1,20 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/desarrollo-web-fullstack/assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <title>FlexBox</title>
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+    <header id="mainHeader">
+      <section>
+        <!--sección del navegador-->
+        <!-- listado de Git -->
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="">Config</a></li>
+          <li><a href="">Commit</a></li>
+          <li><a href="">Push</a></li>
+          <li><a href="">Pull</a></li>
+          <li><a href="">Branch</a></li>
+          <li><a href="">GitHub</a></li>
+          <li><a href="">Config GH</a></li>
+          <li><a href="">Clone</a></li>
+          <li><a href="">config GH Pages</a></li>
+          <li class="divider"></li>
+          <li><a href="">GitHub Pages</a></li>
+        </ul>
+        <!-- lista desplegable de CSS -->
+        <ul id="dropdown2" class="dropdown-content">
+          <li><a href="">Config CSS</a></li>
+          <li><a href="">Clases</a></li>
+          <li><a href="">Sintaxis</a></li>
+          <li><a href="">FlexBox</a></li>
+          <li class="divider"></li>
+          <li><a href="">Grid</a></li>
+        </ul>
+        <!-- listas desplegable de JavaScript -->
+        <ul id="dropdown3" class="dropdown-content">
+          <li><a href="">Variables</a></li>
+          <li><a href="">Condicionales</a></li>
+          <li><a href="">Ciclos</a></li>
+          <li><a href="">Funciones</a></li>
+          <li class="divider"></li>
+          <li><a href="">Api</a></li>
+        </ul>
 
+        <!-- Barra de Navegación -->
+        <nav>
+          <div class="nav-wrapper fondo-azul">
+            <a href="" class="brand-logo"
+              ><img
+                class="logo"
+                src="https://talentotechvalledelcauca.co/assets/landing/img/header/logo-home.svg"
+                alt=""
+            /></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Inicio</a></li>
+              <!-- <li><a href="badges.html">Components</a></li> -->
+              <!-- Dropdown Trigger se encarga de hacer la lista desplegable-->
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                  >Git<i class="material-icons right">arrow_drop_down</i></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown2"
+                  >CSS<i class="material-icons right">arrow_drop_down</i></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown3"
+                  >JavaScript<i class="material-icons right"
+                    >arrow_drop_down</i
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
     </header>
-<div class="contentFlexbox">
-    
-</div>
-    <footer>
-
+    <div class="contCreadorFlexBox">
+      <div class="fotoPerfilFlexBox">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="fotoPerfil"
+        />
+      </div>
+      <div class="datosPerfilFlexBox">
+        <h2>Pagina desarrollada por Ing. Andrés Angulo</h2>
+        <h3>Última actualización: 10 de noviembre de 2024</h3>
+      </div>
+    </div>
+    <div class="contenFlexboxDisplay">
+      <div class="contenFlexBoxContenido">
+        <h1>FlexBox</h1>
+        <section>
+          <p>
+            Flex (también llamado flexbox) es un sistema de
+            <strong>elementos flexibles</strong>
+            que llega con la idea de olvidar estos mecanismos y acostumbrarnos a
+            una mecánica más potente, limpia y personalizable, en la que los
+            elementos HTML se adaptan y colocan automáticamente y es más fácil
+            personalizar los diseños de una página web.
+          </p>
+          <p>
+            Flex está especialmente diseñado para crear, mediante CSS,
+            estructuras de una sóla dimensión.
+          </p>
+        </section>
+        <h2>Conceptos</h2>
+        <section>
+          <p>
+            Para empezar a utilizar <strong>flex</strong> lo primero que debemos
+            hacer es conocer algunos de los elementos básicos de este nuevo
+            esquema, que son los siguientes:
+          </p>
+          <div class="contImagenFlexBox">
+            <img
+              src="https://lenguajecss.com/css/flex/que-es-flex/flex-como-funciona.png"
+              alt="imagenFlexConceptos"
+            />
+          </div>
+          <ol>
+            <li>
+              <strong>Contenedor:</strong> Es el elemento padre que tendrá en su
+              interior cada uno de los ítems flexibles. Observa que al contrario
+              que muchas otras estructuras CSS, por norma general, en Flex
+              establecemos las propiedades al elemento padre.
+              <ul>
+                <li>
+                  <strong>Eje principal:</strong> Los contenedores flexibles
+                  tendrán una orientación principal específica. Por defecto, el
+                  eje principal del contenedor flex es en horizontal (en fila).
+                </li>
+                <li>
+                  <strong>Eje secundario:</strong> De la misma forma, los
+                  contenedores flexibles tendrán una orientación secundaria,
+                  perpendicular a la principal. Si la principal es en
+                  horizontal, la secundaria será en vertical (y viceversa).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Ítem:</strong> Cada uno de los hijos que tendrá el
+              contenedor en su interior.
+            </li>
+          </ol>
+        </section>
+        <section>
+          <h2>Modalidades Flex</h2>
+          <p>
+            Para activar el modo <strong>flex</strong>, utilizaremos sobre el
+            elemento contenedor la propiedad <strong>display</strong>, y
+            especificaremos el <strong>valor flex</strong> o
+            <strong>inline-flex</strong>
+            (dependiendo de como queramos que se comporte el contenedor):
+          </p>
+          <table class="striped">
+            <thead>
+              <tr>
+                <th>Tipo de elemento</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>inline-flex</td>
+                <td>
+                  Establece un contenedor en línea, similar a
+                  <strong>inline-block</strong> (ocupa solo el contenido).
+                </td>
+              </tr>
+              <tr>
+                <td>flex</td>
+                <td>
+                  Establece un contenedor en bloque, similar a
+                  <strong>block</strong> (ocupa todo el ancho del padre).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Propiedades en display Flex</h2>
+          <p>
+            Existen varias propiedades que nos permiten manipular nuestros
+            objetos
+            <strong>Flex</strong>, principalmente encontramos las siguientes
+            propiedades:
+          </p>
+          <section>
+            <h3>-> Flex-Direction</h3>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>Propiedad</th>
+                  <th>Valor</th>
+                  <th>Significado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>flex-direction</td>
+                  <td>row | row-reverse | column | column-reverse</td>
+                  <td>Cambia la orientación del eje principal.</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h3>-> Flex-Wrap</h3>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>Propiedad</th>
+                  <th>Valor</th>
+                  <th>Significado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>flex-wrap</td>
+                  <td>nowrap | wrap | wrap-reverse</td>
+                  <td>Evita o permite el desbordamiento (multilinea).</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <table class="striped">
+              <h3>-> Row-Gap</h3>
+              <thead>
+                <tr>
+                  <th>Propiedad</th>
+                  <th>Valor</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>row-gap</td>
+                  <td>normal</td>
+                  <td>
+                    Espacio entre filas (sólo funciona con flex-direction:
+                    column)
+                  </td>
+                </tr>
+                <tr>
+                  <td>column-gap</td>
+                  <td>normal</td>
+                  <td>
+                    Espacio entre columnas (sólo funciona con flex-direction:
+                    row)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+        <div>
+          <h2>Alinear y Centrar con Flex</h2>
+          <p>
+            Para alinear correctamente, necesitamos conocer las propiedades
+            existentes dentro de flex para disponer los ítems dependiendo de
+            nuestro objetivo. Vamos a revisar las siguientes propiedades, donde
+            algunas actuan en el eje principal (<strong>Eje horizontal</strong>)
+            y otras en el eje secundario (<strong>Eje vertical</strong>)
+          </p>
+          <section>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>Propiedad</th>
+                  <th>Valor</th>
+                  <th>Actúa en eje</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>justify-content</td>
+                  <td>
+                    start | end | center | space-between | space-around |
+                    space-evenly
+                  </td>
+                  <td>Eje horizontal</td>
+                  <td>
+                    Se utiliza para alinear los ítems del eje principal (por
+                    defecto, el horizontal).
+                  </td>
+                </tr>
+                <tr>
+                  <td>align-items</td>
+                  <td>start | end | center | stretch | baseline</td>
+                  <td>Eje vertical</td>
+                  <td>
+                    Usada para alinear los ítems del eje secundario (por
+                    defecto, el vertical).
+                  </td>
+                </tr>
+                <tr>
+                  <td>align-content</td>
+                  <td>
+                    start | end | center | space-between | space-around |
+                    space-evenly | stretch
+                  </td>
+                  <td>Eje vertical</td>
+                  <td>
+                    Se utiliza para alinear el contenido del eje secundario
+                    entre líneas (sólo en contenedor multilinea).
+                  </td>
+                </tr>
+                <tr>
+                  <td>align-self</td>
+                  <td>auto | start | end | center | stretch | baseline</td>
+                  <td>Eje vertical</td>
+                  <td>
+                    Nos permite cambiar el comportamiento de align-items y
+                    sobreescribirlo con comportamientos específicos para ítems
+                    concretos que no queremos que se comporten igual que el
+                    resto
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer fondo-azul">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">
+              You can use rows and columns here to organize your footer content.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright black">
+        <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
     </footer>
-</body>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
 </html>
