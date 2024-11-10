@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <section><!--sección del navegador-->
+            <!-- listado de Git -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="">Config</a></li>
+        <li><a href="">Commit</a></li>
+        <li><a href="">Push</a></li>
+        <li><a href="">Pull</a></li>
+        <li><a href="">Branch</a></li>
+        <li><a href="">GitHub</a></li>
+        <li><a href="">Config GH</a></li>
+        <li><a href="">Clone</a></li>
+        <li><a href="">config GH Pages</a></li>
+        <li class="divider"></li>
+        <li><a href="">GitHub Pages</a></li>
+      </ul>
+      <!-- lista desplegable de CSS -->
+      <ul id="dropdown2" class="dropdown-content">
+        <li><a href="">Config CSS</a></li>
+        <li><a href="">Clases</a></li>
+        <li><a href="">Sintaxis</a></li>
+        <li><a href="">FlexBox</a></li>
+        <li class="divider"></li>
+        <li><a href="">Grid</a></li>
+      </ul>
+      <!-- listas desplegable de JavaScript -->
+      <ul id="dropdown3" class="dropdown-content">
+        <li><a href="jsBasico.html">Conceptos básicos</a></li>
+        <li><a href="">Variables</a></li>
+        <li><a href="">Condicionales</a></li>
+        <li><a href="">Ciclos</a></li>
+        <li><a href="">Funciones</a></li>
+        <li class="divider"></li>
+        <li><a href="">Api</a></li>
+      </ul>
+
+      <!-- Barra de Navegación -->
+      <nav>
+        <div class="nav-wrapper fondo-azul">
+          <a href="" class="brand-logo"><img class="logo" src="https://talentotechvalledelcauca.co/assets/landing/img/header/logo-home.svg" alt=""></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Inicio</a></li>
+            <!-- <li><a href="badges.html">Components</a></li> -->
+            <!-- Dropdown Trigger se encarga de hacer la lista desplegable-->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Git<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">CSS<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown3">JavaScript<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+
+    <!-- ##################################################################################################
+    
+    
+
+
+                             INFORMACIÓN QUE IRIAN EN EL MEDIO DEL NAVEGADOR Y EL FOOTER 
+    
+    
+    
+    ##################################################################################################
+    -->
+
+    <section class="cuadros">
+       <section>
+      <h3>1. ¿Qué es JavaScript?</h3>
+      <img src="https://javiniguez.com/wp-content/uploads/2019/07/que-es-javascript.jpg" alt="Introducción a JavaScript" width="400"  class="responsive-img">
+
+      <p>JavaScript es un lenguaje de programación que se utiliza para crear páginas web interactivas y dinámicas. Se ejecuta directamente en el navegador del usuario, sin necesidad de compilarse previamente. 
+ 
+        <b><br>Algunas de las características de JavaScript son:</b>
+        <li>Es un lenguaje interpretado, por lo que no necesita ser compilado antes de ejecutarse.</li>
+        <li>Es de tipado débil y dinámico, lo que significa que no es necesario declarar explícitamente el tipo a una variable.</li>
+        <li>Es un lenguaje basado en prototipos, lo que ofrece flexibilidad y capacidad de herencia dinámica.</li>
+        <li>Usa funciones de orden superior, lo que significa que las funciones pueden ser tratadas como cualquier otro valor.</li> 
+         
+        <b><br>Algunas de las cosas que se pueden hacer con JavaScript son:</b>
+        <li>Actualizar fuentes de redes sociales</li>
+        <li>Mostrar animaciones y mapas interactivos</li>
+        <li>Añadir juegos</li>
+        <li>Validar los valores de entrada de un formulario web </li>
+        <li>Transmitir información sobre los hábitos de lectura de los usuarios </li>
+        <p>JavaScript fue creado por Brendan Eich en 1995 y es una de las tres tecnologías web principales, junto con HTML y CSS. Para facilitar el trabajo de los desarrolladores, existen frameworks de JavaScript, como Ember, Singular, React, y Vue. js.</p>
+      
+      <h3>2. Variables y Tipos de Datos</h3>
+      <img src="https://i.ytimg.com/vi/kXMpu07zjN4/hqdefault.jpg" alt="Variables en JavaScript" width="400" class="responsive-img">
+
+      <p>Las variables en JavaScript almacenan valores que se pueden usar y modificar en el código. Variables
+        Utiliza variables como nombres simbólicos para valores en tu aplicación. Los nombres de las variables, llamados identificadores, se ajustan a ciertas reglas.
+        Un identificador de JavaScript debe comenzar con una letra, un guión bajo (_) o un signo de dólar ($). Los siguientes caracteres también pueden ser dígitos (0-9).
+        Dado que JavaScript distingue entre mayúsculas y minúsculas, las letras incluyen los caracteres "A" a "Z" (mayúsculas), así como "a" a "z" (minúsculas).
+        Puedes utilizar la mayoría de las letras ISO 8859-1 o Unicode como å y ü en los identificadores. (Para obtener más detalles, consulta esta publicación del blog). También puedes usar Secuencias de escape Unicode como caracteres en identificadores.
+        Algunos ejemplos de nombres legales son Number_hits, temp99, $credit y _name.
+        
+        <br>
+        <br><b>Declaración de variables</b>
+        <br>Puedes declarar una variable de dos formas:
+        
+        <li>la palabra clave var. Por ejemplo, var x = 42. Esta sintaxis se puede utilizar para declarar variables locales y globales, dependiendo del contexto de ejecución.</li>
+        <li>Con la palabra clave const o let. Por ejemplo, let y = 13. Esta sintaxis se puede utilizar para declarar una variable local con ámbito de bloque. (Ve el Ámbito de variables abajo.)</li>
+        <p>También puedes simplemente asignar un valor a una variable. Por ejemplo, x = 42. Este formulario crea una variable global no declarada. También genera una advertencia estricta de JavaScript.
+        Las variables globales no declaradas a menudo pueden provocar un comportamiento inesperado. Por lo tanto, se desaconseja utilizar variables globales no declaradas.</p>
+        
+        <b>Evaluar variables</b>
+        <br>Una variable declarada usando la instrucción var o let sin un valor asignado especificado tiene el valor de undefined.
+        
+        Un intento de acceder a una variable no declarada da como resultado el disparo de una excepción ReferenceError</p>
+      
+        <br><b>Tipos de datos</b> 
+        <p>los tipos de datos son la naturaleza del contenido de una variable o constante. Por ejemplo, si tenemos una variable con contenido 44, su tipo de dato es un número. Si tenemos una variable con contenido "Manz", su tipo de dato es texto.
+            En muchos lenguajes, el programador debe indicar el tipo de dato que tiene una constante o variable. Sin embargo, Javascript nos da la libertad de no tener que indicarlo. Sin embargo, recuerda que aunque no lo indiquemos, Javascript le asigna un tipo de dato dependiendo del contenido.</p>  
+      
+        <p><b> Tipos de datos primitivos</b>
+            <li>Number:	Valor numérico (enteros, decimales...)</li>
+            <li>BigInt:	Valor numérico muy grande	Ver BigInt</li>
+            <li>String:	Valor de texto (cadenas de texto, carácteres...)</li>	
+            <li>Boolean:	Valor booleano (valores verdadero o falso)</li>	
+            <li>Symbol:	Símbolo (valor único)</li>	
+            <li>undefined:	Valor sin definir (variable sin inicializar)</li>
+
+        <p><b>Tipos de datos no primitivos</b>
+            <li>Object	Objeto (estructura más compleja)</li>
+            <li>Function: Función (función guardada en una variable)</li>
+
+        <br><li>null. Representa un valor vacío o ausencia de información.</li>
+        </p>    
+      <h3>3. Funciones</h3>
+      <img src="https://somospnt.com/images/blog/cover/function-declaration.png" alt="Funciones en JavaScript" width="400" class="responsive-img">
+
+      <p>Una función es un bloque de código que realiza una tarea específica. 
+        Las funciones nos permiten agrupar líneas de código en tareas con un nombre, para que, posteriormente, podamos hacer referencia a ese nombre para realizar todo lo que se agrupe en dicha tarea. Para usar funciones hay que hacer 2 cosas:
+        
+        <ol><li>Declarar la función: Preparar la función, darle un nombre y decirle las tareas que realizará.</li>
+        <li>Ejecutar la función: «Llamar» a la función para que realice las tareas de su contenido.</li></ol>
+        
+        <p><b>Declaración</b>
+        <br>En el siguiente ejemplo veremos la declaración de una función llamada saludar:
+        
+        <ul>
+            <li>// Declaración de la función "saludar"</li>
+            <li>function saludar() {</li>
+            <li>// Contenido de la función</li>
+            <li>console.log("Hola, soy una función");</li>
+            <li>}</li>
+        </ul>
+        
+        <br>El contenido de la función es una línea que mostrará por consola un saludo. Sin embargo, si escribimos estas 4-5 líneas de código en nuestro programa, no mostrará nada por pantalla. Esto ocurre así porque solo hemos declarado la función (le hemos dicho que existe), pero aún nos falta el segundo paso, ejecutarla, que es realmente cuando se realizan las tareas de su contenido.
+        
+        <p><b>Ejecución</b>
+        <br>Veamos, ahora sí, el ejemplo completo con declaración y ejecución:
+        
+        <ul>
+            <li>// Declaración de la función "saludar"</li>
+            <li>function saludar() {</li>
+            <li>// Contenido de la función</li>
+            <li>console.log("Hola, soy una función");</li>
+            <li>}</li>
+            <li>// Ejecución de la función</li>
+            <li>saludar();</li>
+            </ul>
+
+        <br> En este ejemplo hemos declarado la función y además, hemos ejecutado la función (en la última línea) llamándola por su nombre y seguida de ambos paréntesis, que nos indican que es una función. En este ejemplo, si se nos mostraría en la consola Javascript el mensaje de saludo.</p>
+      
+
+      
+      <h3>4. Eventos</h3>
+      <img src="https://i.ytimg.com/vi/ej_rvhLjggc/maxresdefault.jpg" alt="Eventos en JavaScript" width="400" class="responsive-img">
+      <p>Los eventos en JavaScript permiten responder a las interacciones del usuario, como hacer clic en un botón. 
+        <b><br>Eventos del mouse: Son acciones que ocurren cuando el usuario interactúa con un dispositivo señalador, como un mouse. Algunos ejemplos de eventos del mouse son:</b>  
+ 
+        <li>click: Se activa cuando el mouse hace clic en un elemento</li> 
+        <li>dblclick: Se activa cuando el mouse hace clic dos veces en un elemento</li> 
+        <li>contextmenu: Se activa cuando el mouse hace clic derecho en un elemento</li> 
+        <li>mouseover: Se activa cuando el cursor del mouse ingresa a un elemento</li> 
+        <li>mouseout: Se activa cuando el cursor del mouse abandona un elemento</li> 
+        <li>mousedown: Se activa cuando el botón del mouse se presiona en un elemento</li> 
+        <li>mouseup: Se activa cuando el botón del mouse se suelta en un elemento</li> 
+
+        <b><br>Eventos del teclado: Algunos ejemplos de eventos del teclado son:</b>
+        <li>keydown</li> 
+        <li>keypress</li> 
+        <li>keyup</li> 
+
+        <b><br>Eventos de formularios: Algunos ejemplos de eventos de formularios son:</b>
+        <li>focus</li> 
+        <li>blur</li> 
+        <li>change</li> 
+        <li>submit</li> 
+         
+        <b><br>Eventos de la ventana: Algunos ejemplos de eventos de la ventana son:</b>
+        <li>scroll</li> 
+        <li>resize</li> 
+        <li>hashchange</li> 
+        <li>load</li> 
+        <li>unload</li> 
+         </p>
+          
+      
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer fondo fondo-azul">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Recursos Adicionales</h5>
+          <p class="grey-text text-lighten-4">Explora más sobre JavaScript y el desarrollo web.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Enlaces</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="portfolio.html">Ir a Portafolio</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright black">
+        <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="/index.html">More Links</a>
+        </div>
+      </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     
+    </body>
+</html>
+
+
+
