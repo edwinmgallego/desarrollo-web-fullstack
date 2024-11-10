@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>JS-API</title>
+</head>
+
+<body>
+  <section><!--sección del navegador-->
+    <!-- listado de Git -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="">Config</a></li>
+      <li><a href="">Commit</a></li>
+      <li><a href="">Push</a></li>
+      <li><a href="">Pull</a></li>
+      <li><a href="">Branch</a></li>
+      <li><a href="">GitHub</a></li>
+      <li><a href="">Config GH</a></li>
+      <li><a href="">Clone</a></li>
+      <li><a href="">config GH Pages</a></li>
+      <li class="divider"></li>
+      <li><a href="">GitHub Pages</a></li>
+    </ul>
+    <!-- lista desplegable de CSS -->
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="">Config CSS</a></li>
+      <li><a href="">Clases</a></li>
+      <li><a href="">Sintaxis</a></li>
+      <li><a href="">FlexBox</a></li>
+      <li class="divider"></li>
+      <li><a href="">Grid</a></li>
+    </ul>
+    <!-- listas desplegable de JavaScript -->
+    <ul id="dropdown3" class="dropdown-content">
+      <li><a href="">Variables</a></li>
+      <li><a href="JS-Condicionales.html">Condicionales</a></li>
+      <li><a href="">Ciclos</a></li>
+      <li><a href="">Funciones</a></li>
+      <li class="divider"></li>
+      <li><a href="JS-API.html">Api</a></li>
+    </ul>
+
+    <!-- Barra de Navegación -->
+    <nav>
+      <div class="nav-wrapper fondo-azul">
+        <a href="" class="brand-logo"><img class="logo"
+            src="https://talentotechvalledelcauca.co/assets/landing/img/header/logo-home.svg" alt=""></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/index.html">Inicio</a></li>
+          <!-- <li><a href="badges.html">Components</a></li> -->
+          <!-- Dropdown Trigger se encarga de hacer la lista desplegable-->
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Git<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">CSS<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown3">JavaScript<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <center>
+    <p>
+    <h1 class="dm-h1"> API en JavaScript </h1>
+    </p>
+  </center>
+  <section class="dm-content-cond">
+    <section>
+      <h2 class="dm-h2">Si (If) </h2>
+      <div>
+        <p>
+          Imagina cómo podríamos hacer un programa que nos diga si un número es mayor o menor a diez. Si es mayor
+          a 10 debería imprimir una cosa, pero si es menor debería imprimir otra. <br> <br>
+          A este concepto se le conoce como condicionales y su sintaxis es la siguiente:
+        </p>
+        <div class="dm-codigo">
+          <code>
+                    if (condición) {<br>
+                        // código que se ejecuta si se cumple la condición <br>
+                      }
+                </code>
+        </div>
+        <p>
+          La condición puede ser cualquier expresión que evalúa a verdadero (true) o falso (false). Crea un
+          archivo llamado conditionals.js y agrega el siguiente contenido
+        </p>
+        <div class="dm-codigo">
+          <code>
+                    if (true) {<br>
+                        console.log("Hola Mundo");<br>
+                      }
+                </code>
+        </div>
+        <p>
+          En vez de utilizar true o false como condición, podemos utilizar una expresión que evalúe a true o
+          false.
+        </p>
+        <div class="dm-codigo">
+          <code>
+                if (1 == 1) {<br>
+                  console.log("Hola Mundo");<br>
+                
+                    }
+              </code>
+        </div>
+        <p>El resultado al ejecutarlo deberia ser el siguiente: </p>
+        <div class="dm-codigo">
+          <code>
+            $ node conditionals.js <br>
+            Hola mundo
+              </code>
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <h2 class="dm-h2">De lo contrario (else)</h2>
+      <div>
+        <p>Lo único que necesitas para hacer condicionales es el if. Pero existen dos atajos que te van a permitir
+          escribir código más corto. <br> <br>El primer atajo es el else, que significa "de lo contrario" en Inglés. El
+          else nos permite definir el código
+          que se debe ejecutar si el if no se cumple, es decir si la condición evalúa a falso. La sintaxis es la
+          siguiente:
+        </p>
+        <div class="dm-codigo">
+          <code>
+            if (condición) { <br>
+              // código que se ejecuta si se cumple la condición <br>
+            } else { <br>
+              // código que se ejecuta si NO se cumple la condición
+            }
+              </code>
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <h2 class="dm-h2">Condiciones Anidadas</h2>
+      <div>
+        <p>Ahora imagina que queremos modificar este programa para que en vez de imprimir "El número es igual o mayor a
+          10", imprima "El número es igual a 10" o "El número es mayor a 10" dependiendo si el número es igual 10 o
+          mayor a 10 respectivamente. <br> <br>
+          En JavaScript (y en la mayoría de lenguajes de programación) es posible anidar condicionales, así que una
+          posible solución sería la siguiente:</p>
+
+        <div class="dm-codigo-2">
+          <code>
+              var num = 8; <br>
+
+              if (num < 10) { <br>
+                console.log("El número es menor a 10"); <br>
+              } else { <br>
+                if (num > 10) { <br>
+                  console.log("El número es mayor a 10");  
+                } else {
+                  console.log("El número es igual a 10");
+                }
+              }
+            </code>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="dm-h2">Expresiones Booleanas</h2>
+      <div>
+        <p>
+          Volvamos a jugar el juego, pero en vez de utilizar frases, utilicemos expresiones booleanas. Debes decidir si
+          cada una de las siguientes expresiones es verdadera o falsa (true o false):
+        </p>
+        <div>
+          <code>
+              1. true <br>
+              2. false <br>
+              3. 1 < 1 <br>
+              4. 2 != 3 <br>
+              5. 1 < 1 && 2 != 3 <br>
+            </code>
+        </div>
+
+        <p>
+          Analicemos la última expresión: 1 < 1 && 2 !=3. ¿Cómo podemos saber si es verdadera o falsa? <br> <br> El
+            primer paso es
+            reemplazar cada lado de la expresión. 1 < 1 es false y 2 !=3 es true. Quedaría: <br><br><code> false && true <br> <br>Recuerda que
+            para que una expresión con y (&&) sea verdadera, cada lado tiene que ser verdadero. Sin embargo, podemos
+            hacer una tabla con todas las combinaciones entre verdadero y falso que podamos usar como referencia más
+            adelante: </p>
+
+            <img src="https://media.licdn.com/dms/image/v2/D4E12AQGTPAwQb4qL6g/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1678483132430?e=1736985600&v=beta&t=-e-c4Srs01jK5qa1p9zgyYHud3Ifun6PWnK_f6iUAJk" alt="tabla de verdad" class="dm-img">
+
+      </div>
+      <p>Acá encontraras un video que muestra como uar las condicionales:</p>
+      
+      <iframe src="https://www.youtube.com/embed/XYs3nHEKfeY" title="👩🏻‍💻 CONDICIONALES IF + ELSE en JAVASCRIPT  + EJERCICIO | ⭐ Curso JAVASCRIPT DESDE CERO 🚀 #7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="dm-video"></iframe>
+      <br><br>
+
+    </section>
+  </section>
+
+  <footer class="page-footer fondo-azul">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright black">
+      <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

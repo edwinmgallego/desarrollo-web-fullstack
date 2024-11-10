@@ -8,3 +8,67 @@
     --md:1rem;      /*tamaño mediano*/
     --lg:2rem;      /*tamaño grande*/
 }
+.fondo-azul{
+    background: var(--blue-talento-tech); /*fondo del navegador*/
+}
+
+.fondo-black{
+    background: var(--negro-talento-tech);
+}
+
+.logo{
+    /*Tmaño del logo que esta en el navegador*/
+    width: 150px;
+    height: auto;
+    padding: 15px 0px 0px 20px;
+}
+
+.dm-h1{
+    font-size: var(--lg);
+    font-weight: bold;
+    text-transform:uppercase;
+}
+.dm-h2{
+    font-size: var(--lg);
+}
+
+.dm-content-cond{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: var(--md);
+}
+.dm-codigo{
+    font-size: var(--md);
+    background-color: var(--negro-talento-tech);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin-left: 30%;
+    color: var(--blanco-talento-tech);
+    padding: 25px;
+    border-radius: 15px;
+    
+}
+.dm-codigo-2{
+    font-size: var(--md);
+    background-color: var(--negro-talento-tech);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin-left: 20%;
+    color: var(--blanco-talento-tech);
+    padding: 25px;
+    border-radius: 15px;
+    
+}
+.dm-img{
+    width: 60%;
+    margin-left: 15%;
+}
+.dm-video{
+    width: 640px;
+    height: 360px;
+    margin-left: 10%;
+}
