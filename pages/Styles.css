@@ -1,0 +1,65 @@
+:root{
+    /*Colores */
+        --blue-talento-tech:#002552;
+        --blanco-talento-tech:azure;
+        --negro-talento-tech:black;
+    /* Fuentes */
+        --ms:0.5rem;    /* tamaño pequeño */
+        --md:1rem;      /* tamaño mediano */
+        --lg:2rem;      /* tamaño grande */
+    }
+    /* clases para los fondos */
+.fondo-azul{
+    background: #002552;
+}
+
+.fondo-blanco{
+    background: azure;
+}
+
+.fondo-negro{
+    background: black;
+}
+/*estilos de mi Commit*/
+
+
+.head {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #222;
+    color: rgb(1, 222, 247);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    transform: translateX(10);
+    transition: transform 0s; /* Sin movimiento inicial */
+    font-size: 40px;
+    animation: scroll-text 10s linear infinite;
+}
+
+.head:hover .marquee {
+    animation-play-state:paused ;
+    color:chartreuse;
+  }
+  @keyframes scroll-text {
+      0% {
+          transform: translateX(200%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+  .contenedor_kota{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 5rem;
+    padding: 1rem;
+    align-items: baseline;
+    align-items: center;
+  }
