@@ -1,0 +1,205 @@
+:root{
+    /*Colores */
+        --blue-talento-tech:#002552;
+        --blanco-talento-tech:azure;
+        --negro-talento-tech:black;
+    /* Fuentes */
+        --ms:0.5rem;    /*tamaño pequeño*/
+        --md:1rem;      /*tamaño mediano*/
+        --lg:2rem;      /*tamaño grande*/
+    }
+    
+    .fondo-azul{
+        background: var(--blue-talento-tech); /*fondo del navegador*/
+    }
+    
+    .fondo-black{
+        background: var(--negro-talento-tech);
+    }
+    
+    .logo{
+        /*Tmaño del logo que esta en el navegador*/
+        width: 150px;
+        height: auto;
+        padding: 15px 0px 0px 20px;
+    }
+    body{
+        font-family: 'poppins';
+        background-color: #0e0e0e;
+    }
+
+    /*MI CSS*/
+    .btn {
+        cursor: pointer;
+        display: inline-block;
+        border: 0;
+        font-weight: bold;
+        padding: 10px 20px;
+        background: #262626;
+        color: #fff;
+        font-size: 15px;
+        border: 1px solid #fff;
+      }
+      
+      .btn:hover {
+        opacity: 0.9;
+      }
+      
+      .showcase {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-end;
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+      
+      .showcase h2,
+      .showcase p {
+        margin-bottom: 10px;
+      }
+      
+      .showcase .btn {
+        margin-top: 20px;
+      }
+      
+      /* CARTAS */
+      .cartas-nicole {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin: 70px 0;
+      }
+      
+      .cartas-nicole img {
+        width: 100%;
+        height: 180px;
+        border-radius: 80px;
+        border: 5px  solid aqua ;
+      }
+      
+      .cartas-nicole h3 {
+        font-size: 20px;
+        color: #f7f32f;
+        margin: 10px 0;
+        font-weight: bold;
+        
+      }
+      
+      .cartas-nicole a {
+        padding: 10px 0;
+        color: #f2f2f2;
+        
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bold;
+      }
+      .cartas-nicole p{
+        color: #f2f2f2;
+      }
+
+      /*otra parte*/
+      .sobremi{
+        background-color: #1e2326;
+        color: #fff;
+        padding: 50px 20px;
+    }
+    .sobremi .contenido-sobremi{
+        max-width: 1100px;
+        margin: auto;
+    }
+    .sobremi h2{
+        font-size: 48px;
+        font-family: 'Righteous';
+        text-align: center;
+        padding: 20px 0;
+    
+    }
+    .sobremi .contenido-sobremi p{
+        font: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .sobremi .contenido-sobremi p span{
+        color: #d43484;
+        font-weight: bold;
+    }
+    .sobremi .fila-nicole{
+        display: flex;
+    }
+    .sobremi .fila-nicole .col-nicole
+    {
+        width: 50%;
+    }
+    .sobremi .fila-nicole .col-nicole h3
+    {
+        font-size: 28px;
+        font-family: 'Righteous';
+        margin-bottom: 55px;
+    }
+    .sobremi .fila-nicole .col-nicole ul{
+        list-style: none;
+    }
+    .sobremi .fila-nicole .col-nicole ul li{
+        margin: 12px 0;
+    }
+    
+    
+
+    .btn-nicole{
+        /* margin-top: 150px; */
+    }
+    .btn-nicole:hover{
+        background-color: #d43484;
+    }
+    .sobremi .fila-nicole .col-nicole .contenedor-intereses{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sobremi .fila-nicole .col-nicole .contenedor-intereses .intereses{
+        width: 100px;
+        height: 100px;
+        background-color: #252A2E;
+        border-radius: 10px;
+        margin: 0 15px 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+   
+    .sobremi .fila-nicole .col-nicole .contenedor-intereses .intereses i{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .sobremi button{
+        cursor: pointer;
+        background-color: white;
+        border: 2px solid #fff;
+        width: fit-content;
+        display: block;
+        margin: 20px auto;
+        padding: 10px 22px;
+        font-size: 16px;
+        color: #000000;
+        position: relative;
+        z-index: 10;
+    }
+    .sobremi button .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #d6ee01;
+        z-index: -1;
+        transition: 1s;
+    }
+    .sobremi button:hover .overlay{
+        width: 100%;
+    }
+}

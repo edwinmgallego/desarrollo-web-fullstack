@@ -1,33 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SINTAXIS</title>
-</head>
-<body>
-    <!--SECCIÓN SINTAXIS CSS-->
-    <section id="inicio" class="inicio">
-        <h1>SINTAXIS EN CSS</h1>
-        <P>La sintaxis de CSS es el conjunto de reglas que definen cómo escribir código en CSS.
-             Estas reglas definen cómo se deben estructurar las reglas de estilo y cómo se deben 
-             combinar los selectores, propiedades y valores para producir un diseño coherente en 
-             una página web.
-        </P>
-         <P>
-            La sintaxis de CSS es bastante sencilla, y generalmente se escribe en archivos
-            separados para evitar mezclar el código HTML con el CSS.
-         </P>
-         <H2>EJEMPLO 1</H2>
-         <img src="/pages/img/ejecss1.png" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles2.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <section><!--sección del navegador-->
+            <!-- listado de Git -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="">Config</a></li>
+        <li><a href="">Commit</a></li>
+        <li><a href="">Push</a></li>
+        <li><a href="">Pull</a></li>
+        <li><a href="">Branch</a></li>
+        <li><a href="">GitHub</a></li>
+        <li><a href="">Config GH</a></li>
+        <li><a href="/pages/gitclone.html">Clone</a></li>
+        <li><a href="">config GH Pages</a></li>
+        <li class="divider"></li>
+        <li><a href="">GitHub Pages</a></li>
+      </ul>
+      <!-- lista desplegable de CSS -->
+      <ul id="dropdown2" class="dropdown-content">
+        <li><a href="">Config CSS</a></li>
+        <li><a href="">Clases</a></li>
+        <li><a href="/pages/index2.html">Sintaxis</a></li>
+        <li><a href="">FlexBox</a></li>
+        <li class="divider"></li>
+        <li><a href="">Grid</a></li>
+      </ul>
+      <!-- listas desplegable de JavaScript -->
+      <ul id="dropdown3" class="dropdown-content">
+        <li><a href="">Variables</a></li>
+        <li><a href="">Condicionales</a></li>
+        <li><a href="">Ciclos</a></li>
+        <li><a href="">Funciones</a></li>
+        <li class="divider"></li>
+        <li><a href="">Api</a></li>
+      </ul>
 
-         <p>
-            En este ejemplo, el selector h1 apunta al elemento HTML en la página web. La 
-            propiedad color especifica que queremos cambiar el color del texto dentro de este elemento.
-         </p>
-
-
+      <!-- Barra de Navegación -->
+      <nav>
+        <div class="nav-wrapper fondo-azul">
+          <a href="/NOV_9TECH/CLASE_NOV9/index.html" class="brand-logo"><img class="logo" src="https://talentotechvalledelcauca.co/assets/landing/img/header/logo-home.svg" alt=""></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/pages/gitclone.html">Inicio</a></li>
+            <!-- <li><a href="badges.html">Components</a></li> -->
+            <!-- Dropdown Trigger se encarga de hacer la lista desplegable-->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Git<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">CSS<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown3">JavaScript<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      </nav>
     </section>
+
+
+    <!-- ##################################################################################################
+               
     
-</body>
+  CARTAS -->
+  <div class="cartas-nicole">
+    <div>
+      <img src="/pages/img/img1.png" alt="" />
+      <h3>Elementos básicos de la sintaxis de CSS</h3>
+      <p>
+        Para poder escribir CSS correctamente, es importante conocer los elementos básicos de su sintaxis.
+      </p>
+      <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+    </div>
+    <div>
+      <img src="/pages/img/SELECTORES.png" alt="" />
+      <h3>Selectores</h3>
+      <p>
+        Estos selectores apuntan a elementos HTML específicos. Por ejemplo, el selector de etiqueta p 
+        apuntaría a todos los elementos <p> en la página
+      </p>
+      <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+    </div>
+    <div>
+      <img src="/pages/img/LASESELEC.png" alt="" />
+      <h3>Selectores de clase</h3>
+      <p>
+        Los selectores de clase apuntan a elementos HTML que tienen una clase específica. Por ejemplo,
+         el selector .mi-clase apuntaría a todos los elementos que tienen la clase mi-clase.
+      </p>
+      <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+    </div>
+    <div>
+      <img src="/pages/img/selectid.png" alt="" />
+      <h3>Selectores de ID</h3>
+      <p>
+        Los selectores de ID apuntan a elementos HTML que tienen un ID específico. Por ejemplo, el selector
+         #mi-id apuntaría al elemento que tiene el ID mi-id.
+      </p>
+      <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+    </div>
+  </div>
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-sobremi">
+      <h2>HERRAMIENTAS</h2>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos, corporis quidem enim atque
+         praesentium nemo ipsa, minus optio delectus nulla ratione suscipit voluptatum ab sunt nesciunt nobis
+          quod est.
+      </P>
+     
+      <div class="fila-nicole">       
+          <!--links-->
+       <div class="col-nicole">
+        <h3>LINKS PARA CONSULTAR MÁS:</h3>
+        <ul>
+          <li>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS/Syntax" target="_blank">click aquí</a>
+            APRENDE Y ASCIENDE........
+          </li>
+          <li>
+            <a href="https://oregoom.com/css/sintaxis/" target="_blank">click aquí</a>
+            ¿CÓMO ES LA SINTAXIS EN CSS?
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">CLICK AQUÍ</a>
+            CSS BÁSICO
+          </li>
+        </ul>
+       </div>
+         <!-- INTERESES  -->
+          <div class="col-nicole">
+            <h3>CONOCE SOBRE OTROS TEMAS</h3>
+            <!-- <div class="contenedor-intereses"> -->
+              <!-- <div class="intereses"> -->
+                <a href="/pages/gitclone.html"><button class="btn-nicole">COMO CLONAR UN REPOSITORIO</button></a>
+                <a href="/NOV_9TECH/CLASE_NOV9/index.html"><button class="btn-nicole">REVISA MI PORTAFOLIO</button></a>
+                <iframe class="video-Nicole" width="400px" height="350px"  src="https://www.youtube.com/embed/wZniZEbPAzk?start=4215" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- </div> -->
+          <!-- </div> -->
+      </div>
+      <button>
+        DESCARGAR UNA GUÍA <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
+    </div>
+
+   
+
+  
+
+
+
+
+
+    
+
+
+    
+    
+    
+    <!--##################################################################################################-->
+
+    <section>
+      <div>
+        <p>informacion</p>
+      </div>
+    </section>
+
+
+    <footer class="page-footer fondo-azul">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright black">
+        <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/main2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+>>>>>>> cbee7012fd9880d5a855d7a7cca5678678e721b4
 </html>
