@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <title>Pull Git</title>
+  </head>
+  <body>
+    <div id="nav"><!--sección del navegador--></div>
+
+    <section>
+      <div class="container">
+        <div class="row">
+            <div class="col s6 center">
+              <a href="https://jj-el.github.io/JhonEscarraga/">
+                <img class="perfil-JJ" src="https://lh3.googleusercontent.com/a/ACg8ocLX1eOG8c1cF4SEUQgC4wDBDwA67_JRP39Xu5V7ma6FhSlhSrAz=s288-c-no" alt="">
+              </a>
+            </div>
+            <div class="col s6">
+              <h1 class="titulo-JJ">Jhon Escarraga</h1>
+              <div class="row">
+                <div class="col center">
+                  <a href="https://github.com/dashboard">
+                    <img class="socialimg-jj" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <p class="titulo-JJ">Cómo hacer un <span>git pull</span></p>
+          </div>
+          <div class=" col s12 tamaño-JJ">
+            <div class="tamaño-JJ">
+              <p>El comando git pull se utiliza para actualizar tu repositorio local con los últimos cambios 
+                del repositorio remoto. Esto es útil cuando necesitas asegurarte de que tu copia local está 
+                al día con los cambios realizados por otros colaboradores en el proyecto. 
+              </p>
+            </div>
+            <div class="tamaño-JJ">
+              <h5 class="center">¿Qué hace git pull?</h5>
+              <p class="center">git pull es en realidad una combinación de dos comandos de Git:</p>
+              <div class="row">
+                <div class="col s6 fondo-black">
+                  <h4 class="center">git fetch</h4>
+                  <p>Descarga los cambios del repositorio remoto, pero no los aplica inmediatamente a tu copia local</p>
+                </div>
+                <div class="col s6">
+                  <h4 class="center">git merge</h4>
+                  <p>Fusiona los cambios descargados en tu rama actual.</p>
+                </div>
+              </div>
+              <p class="center">
+                Con git pull, ambos pasos se realizan automáticamente en una sola línea de comando.
+              </p>
+            </div>
+          </div>
+          <div class="col s12 ">
+            <div class="tamaño-JJ">
+              <h4 class="center">Cómo usar git pull</h4>
+              <p>
+                Primero, abre la línea de comandos. Puedes hacerlo en Visual Studio Code (VS Code) dentro de la carpeta de tu 
+                proyecto. Usa el atajo <b>"Ctrl + Ñ"</b> para abrir la consola o terminal. Asegúrate de estar ubicado dentro de la carpeta 
+                de tu repositorio antes de continuar.
+              </p>
+              <p>
+                Luego, en la terminal, ejecuta el comando git pull de la siguiente forma: <b>"git pull origin nombre-de-la-rama"</b>
+              </p>
+              <p class="center"> 
+                 
+              </p>
+              <div class="row">
+                <div class="col s6">
+                  <h4 class="center">origin:</h4>
+                  <p>es el nombre predeterminado del repositorio remoto.</p>
+                </div>
+                <div class="col s6 fondo-black">
+                  <h4 class="center">nombre-de-la-rama:</h4>
+                  <p>es la rama que deseas actualizar (generalmente main o master).</p>
+                </div>
+              </div>
+              <p class="tamaño-JJ">
+                Podemos ver un ejemplo en la siguiente imagen, donde se observa que la rama se llama 
+                <b>"camp-jhon-escarraga"</b>. A esta rama le realizaremos un pull para descargar la información que contiene.
+              </p>
+            </div>
+          </div>
+          <div class="col s12 ">
+            <img src="../assets/img/ejemplo-pull.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      
+
+      Ejemplo:
+      git pull origin main
+      Esto descargará los cambios más recientes de la rama main del repositorio remoto y los aplicará en tu copia local.
+
+      Posibles Resultados
+      Sin Conflictos: Si no hay conflictos, Git fusionará los cambios automáticamente.
+      Con Conflictos: Si hay conflictos entre tu copia local y los cambios del repositorio remoto, Git te indicará cuáles archivos tienen conflictos para que los resuelvas manualmente.
+      Nota Importante
+      Recuerda realizar un git pull frecuentemente para mantener tu copia local al día y evitar conflictos más complicados en el futuro.
+
+
+    -->
+
+    <div id="footer" class="fondo-azul"></div>
+    <script src="../assets/js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        loadComponent("nav", "nav.html");
+        loadComponent("footer", "footer.html");
+      });
+    </script>
+  </body>
+</html>

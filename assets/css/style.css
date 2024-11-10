@@ -9,12 +9,22 @@
     --lg:2rem;      /*tamaño grande*/
 }
 
+#mainHeader {
+    /* /Posicionando el header para que siempre se muestre/ */
+	height: 60px;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
 .fondo-azul{
     background: var(--blue-talento-tech); /*fondo del navegador*/
 }
 
 .fondo-black{
     background: var(--negro-talento-tech);
+    color: var(--blanco-talento-tech);
 }
 
 .logo{
@@ -23,3 +33,28 @@
     height: auto;
     padding: 15px 0px 0px 20px;
 }
+
+.titulo-JJ{
+    font-size: var(--lg);
+    margin: 20px 0px 0px 0px;
+}
+
+.tamaño-JJ{
+    /* width: 500px; */
+    padding: 5px 100px;
+    text-align: justify;
+}
+
+.socialimg-jj {
+    padding: 0px;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.perfil-JJ{
+    width: 150px;
+    height: auto;
+    border-radius: 100px;
+  }
