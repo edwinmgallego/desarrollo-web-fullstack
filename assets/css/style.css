@@ -63,6 +63,21 @@
     border-radius: 15px;
     
 }
+.dm-codigo-3{
+    font-size: var(--md);
+    background-color: var(--negro-talento-tech);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    margin-left: 10%;
+    color: var(--blanco-talento-tech);
+    padding: 15px;
+    border-radius: 15px;
+    
+}
+
+
 .dm-img{
     width: 60%;
     margin-left: 15%;
