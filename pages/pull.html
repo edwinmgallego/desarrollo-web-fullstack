@@ -83,41 +83,54 @@
               <div class="row">
                 <div class="col s6">
                   <h4 class="center">origin:</h4>
-                  <p>es el nombre predeterminado del repositorio remoto.</p>
+                  <p>es el nombre predeterminado del repositorio remoto, osea del origen de donde quieres traer los archivos
+                    o lineas de codigo.</p>
                 </div>
                 <div class="col s6 fondo-black">
                   <h4 class="center">nombre-de-la-rama:</h4>
-                  <p>es la rama que deseas actualizar (generalmente main o master).</p>
+                  <p>se refiere a la rama desde la cual deseas obtener información para actualizar tu copia local. 
+                    Generalmente, esta es la rama main o master.</p>
                 </div>
               </div>
               <p class="tamaño-JJ">
-                Podemos ver un ejemplo en la siguiente imagen, donde se observa que la rama se llama 
-                <b>"camp-jhon-escarraga"</b>. A esta rama le realizaremos un pull para descargar la información que contiene.
+                En la siguiente imagen, podemos ver un ejemplo en el que la rama se llama <b>"camp-jhon-escarraga"</b>. 
+                Realizaremos un pull sobre esta rama para descargar su información y aplicarla en nuestra copia local. 
+                También es posible permanecer en esta rama y ejecutar el comando <b>"git pull origin main"</b>, lo cual traerá 
+                los archivos y la información de la rama <b>"main"</b> hacia nuestra rama <b>"camp-jhon-escarraga"</b>.
               </p>
             </div>
           </div>
           <div class="col s12 ">
             <img src="../assets/img/ejemplo-pull.png" alt="">
           </div>
+          <div class="row">
+            <h4 class="center">Posibles resultados:</h4>
+            <ol>
+              <li><b>Sin conflictos: </b>Si no hay conflictos, Git fusionará los cambios automáticamente.</li><br>
+              <li><b>Con conflictos: </b>Si hay conflictos entre tu copia local y los cambios del repositorio remoto, 
+                Git te indicará cuáles archivos tienen conflictos para que los resuelvas manualmente.</li>
+            </ol>
+          </div>
+          <div class="row">
+            <div class="center">
+              <button class="btn waves-effect waves-light red darken-4" type="button" name="action" onclick="nota()">
+                <i class="material-icons right">send</i> Nota Importante
+              </button>
+            </div>
+            <div id="mensaje" style="display: none; margin-top: 10px;">
+              <div class="center nota-jj">
+                <div class="card darken-1 fondo-azul">
+                  <div class="card-content white-text">
+                    <p>Recuerda realizar un git pull frecuentemente para mantener tu copia local al día y evitar conflictos 
+                    más complicados en el futuro.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <!--
-      
-
-      Ejemplo:
-      git pull origin main
-      Esto descargará los cambios más recientes de la rama main del repositorio remoto y los aplicará en tu copia local.
-
-      Posibles Resultados
-      Sin Conflictos: Si no hay conflictos, Git fusionará los cambios automáticamente.
-      Con Conflictos: Si hay conflictos entre tu copia local y los cambios del repositorio remoto, Git te indicará cuáles archivos tienen conflictos para que los resuelvas manualmente.
-      Nota Importante
-      Recuerda realizar un git pull frecuentemente para mantener tu copia local al día y evitar conflictos más complicados en el futuro.
-
-
-    -->
 
     <div id="footer" class="fondo-azul"></div>
     <script src="../assets/js/main.js"></script>

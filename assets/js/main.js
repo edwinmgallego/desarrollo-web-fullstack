@@ -30,3 +30,15 @@ function loadComponent(componentId, filePath) {
             console.error(error);
         });
 }
+
+function nota() {
+    // Selecciona el elemento con id "mensaje" donde se mostrara el mensaje
+    const mensaje = document.getElementById('mensaje');
+  
+    // Alterna la visibilidad del mensaje
+    if (mensaje.style.display === 'none') {
+      mensaje.style.display = 'block'; // Muestra el mensaje
+    } else {
+      mensaje.style.display = 'none'; // Oculta el mensaje
+    }
+  }
